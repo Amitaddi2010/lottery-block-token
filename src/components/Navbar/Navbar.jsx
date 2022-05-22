@@ -5,6 +5,7 @@ function Navbar({handler}) {
     <nav className='nav'>
       <button onClick={()=>handler(2)}>Swap</button>
       <button onClick={()=>handler(1)}>Lottery</button>
+      <button onClick={()=>handler(3)}>About Us</button>
     </nav>
   )
 }

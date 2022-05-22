@@ -10,9 +10,10 @@ function Swap() {
 
   return (
     <div className='content swap'>
-      <h1>Swap</h1>
+      <h2>Swap</h2>
+       
       <div className='balance'>{from}</div>
-      <AiOutlineSwap onClick={() => {
+      <AiOutlineSwap onClick={() => {     
         let temp = from;
         setFrom(to);
         setTo(temp);
@@ -25,8 +26,17 @@ function Swap() {
         boxShadow: '0px 0px 0px 5px rgb(15, 244, 221)',
         animation:''
       }} />
+
+ 
+
       <div className='balance'>{to}</div>
-      <button>Connect Wallet</button>
+      <button >Connect Wallet</button>
+      <div className="ExchangeRate">
+          <span className="EXC-left "> Exchange rate:&nbsp; </span>
+          <span className="EXC-right"> &nbsp; 1 ETH   =   200000 LBT &#9432; &nbsp; </span>
+          <br></br>
+          <span className="EXC-Fee"> &nbsp; &nbsp; &nbsp;Fee   =   1000LBT &#9432;</span>
+        </div>
     </div>
   )
 }
